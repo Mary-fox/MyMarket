@@ -1,0 +1,29 @@
+.characteristic__name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.characteristic__list {
+    display: flex;
+    padding: 0px;
+    gap: 10px;
+    margin: 0;
+    flex-flow: row wrap;
+}
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .characteristic__list {
+        gap: 8px;
+    }
+    .characteristic__name{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+ }    
+ 
+

@@ -1,0 +1,38 @@
+html, body, #root { 
+    height: 100%
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+}
+.main__wrapper {
+    display: flex;
+    padding-top: 80px;
+    height: 100%;
+}
+
+.main__content {
+    display: flex;
+    max-width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.main__link, .main__text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.main__text {
+    padding-bottom: 20px;
+}
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .main__text {
+    font-size: 14px;
+    line-height: 17px;
+    }
+ }

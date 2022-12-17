@@ -1,0 +1,112 @@
+ /*Отзыв*/
+
+.review__content {
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #888888;
+}
+.review:last-child .review__content {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.review__photo {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.review__name {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.review__rating {
+    margin-bottom: 20px;
+}
+.review__parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.review__parameter {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.review__word {
+    display: block;
+    font-weight: 700;
+}
+.review-section__indent {
+    margin-bottom: 30px;
+}
+/*Звезды рейтинга*/
+.review-rating{
+    display: flex;
+}
+.review-rating__items {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.review-rating__items input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.review-rating__items label {
+    box-sizing: border-box;
+    display: inline-block;
+    background: no-repeat url("/public/images/Stargrey.png");
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    cursor: pointer;
+}
+.review-rating__items label:hover, .review-rating__items label:hover ~ label {
+    background: no-repeat url("/public/images/Stargold.png");
+    background-size: cover;
+}
+.review-rating__items input:checked, .review-rating__items input:checked ~ label {
+    background: no-repeat url("/public/images/Stargold.png");
+    background-size: cover;
+}
+
+ /*Для ширины экрана меньше 1500px*/
+ @media (max-width: 1499px) {
+    
+    .review__photo {
+        width: 100px;
+        height: 100px;
+    }
+    .review-rating__items label {
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+    }
+}
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .review__photo {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+    .review {
+        position: relative;
+    }
+    .review__name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .review__name, .review-rating {
+        padding-left: 80px;
+    }
+    .review-section__indent {
+        margin-bottom: 10px;
+    }
+    .review__content {
+        padding-bottom: 30px;
+    }
+ }    
+

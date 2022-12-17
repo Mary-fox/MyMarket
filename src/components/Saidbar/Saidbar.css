@@ -1,0 +1,122 @@
+ /* Сайдбар */
+ .saidbar{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 40px;
+    order: 1;
+    flex-grow: 0;
+    
+}
+/* Сайдбар важное */
+.important {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.important__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+.important-old {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+}
+.important-old__prise{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+.old-price__sale {
+    align-items: center;
+    gap: 10px;
+    background: #F36223;
+    border-radius: 500px;
+}
+.old-price__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 4px 8px;
+}
+.important__actual {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+.important-delivery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.important-delivery__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.important__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bold-text{
+    font-weight: bold;
+}
+/* .important-btn {
+    display: flex;
+    width: 100%;
+}
+.important-btn__btn {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    width: 100%;
+    background: #F36223;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+} 
+.important-btn__add {
+    background: #888888 !important;
+} */
+
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .important {
+        gap: 0px;
+    }
+    .important-delivery__text{
+        font-size: 14px;
+        line-height: 17px;
+
+    }
+    .important__actual {
+        padding-bottom: 15px;
+    }
+ }

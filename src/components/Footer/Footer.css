@@ -1,0 +1,36 @@
+/*Футер*/
+.footer {
+    background: #F2F2F2;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px 30px 50px;
+
+}
+.footer__name {
+    color: #FF5722;
+}
+.footer__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;   
+}
+.footer__top {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+   /*Для ширины экрана меньше 750px*/
+   @media (max-width: 750px) {
+    .footer__wrapper {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__info {
+        padding-bottom: 20px;
+    }
+ }    
+ 

@@ -1,0 +1,25 @@
+.config {
+    display: flex;
+    flex-flow: column wrap;
+}
+.config__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 15px;
+}
+.config__list {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 750px) {
+    .config__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

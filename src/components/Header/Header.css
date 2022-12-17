@@ -1,0 +1,126 @@
+/*Хедер*/
+.header {
+    position: fixed;
+    margin: 0 auto;
+    padding: 0px 50px;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #010541;
+    background: #F8FAFE;
+    opacity: 80%;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 50px;
+    position: fixed;
+    inset: auto 0;
+}
+.header__icon {
+    position: relative;
+    cursor: pointer;
+    right: 10px;
+}
+.header__icon-link { 
+    padding-right: 20px;
+}
+.header__icon-link svg{
+    width: 44px;
+    height: 35px;
+}
+.header__icon_cart svg{
+    width: 42px;
+    height: 41px;
+}
+.header__icon-link:hover svg path {
+    fill: #F36223;
+}
+.header__icon_cart:hover svg path {
+    fill: #F36223;
+}
+.header__icon-cart-counter, .header__icon-link-counter {
+    position: absolute;
+    top: -5px;
+    left: calc(100% - 11px);
+    padding: 8px 7px;
+    border-radius: 13px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1px;
+    background: #F36223;
+}
+.header__icon-link-counter {
+    left: calc(100% - 81px);
+}
+
+.counter__empty {
+    display: none;
+}
+.logo {
+    margin: 0;
+    font-weight: 700;
+    line-height: 53px;
+    font-size: 44px;
+    padding: 19px 0 13px 0;
+    color: black;
+}
+.logo__image {
+    height: 43px;
+}
+
+.logo__name {
+    color: #FF5722;
+    padding-left: 10px;
+}
+ /*Для ширины экрана меньше 1500px*/
+@media (max-width: 1499px) {
+    .header__content {
+        padding: 0 15px;
+    }
+}
+ /*Для ширины экрана меньше 750px*/
+@media (max-width: 750px) {
+    .header {
+        height: 55px;
+    }
+    .logo {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        padding: 8px 0 10px 0;
+    }
+    .logo__image img{
+        height: 30px;
+    }
+    .header__icon-link svg{
+        width: 26px;
+        height: 20px;
+    }
+    .header__icon-link {
+        padding-right: 10px;
+    }
+    .header__icon-cart-counter  {
+        left: calc(100% - 8px);
+    }
+    .header__icon-link-counter {
+        left: calc(100% - 44px);
+    }
+    .header__icon_cart svg{
+        width: 25px;
+        height: 23px;
+    }
+    .header__icon-cart-counter,.header__icon-link-counter  {
+        font-size: 0;
+        top: -3px;
+        padding: 5px 5px;
+        border-radius: 50px;
+    }
+    
+ }    
+ 

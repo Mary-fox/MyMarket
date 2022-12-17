@@ -1,0 +1,30 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 88px 0px 8px 0px;
+    gap: 4px;
+}
+.breadcrumbs__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #008CF0;
+    text-decoration: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.breadcrumbs__item:last-child span {
+  display: none;
+}
+/*Для ширины экрана меньше 750px*/
+@media (max-width: 750px) {
+    .breadcrumbs {
+        flex-flow: row wrap;
+        padding: 65px 0px 8px 0px;
+    }
+    .breadcrumbs__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+ }    
+ 

@@ -1,0 +1,54 @@
+
+.characteristic__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characteristic__btn label {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+.characteristic__btn img {
+    height: 60px;
+} 
+.characteristic__btn input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+.characteristic__btn input[type=radio]:checked + label{
+    border: 2px solid #f36223;
+} 
+.characteristic__btn input[type=radio]:active + label{
+    border: 2px solid #A93A09;
+} 
+
+/* .characteristic__btn_active{
+    border: 2px solid #A93A09;
+} */
+.characteristic__btn label:hover, .config__label:hover{
+    background: #F2F2F2;
+    border: 1px solid #888888;
+    cursor: pointer;
+}
+
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .characteristic__btn label {
+       width: 60px;
+       height: 60px; 
+    }
+    .characteristic__btn img {
+        height: 50px; 
+    }
+
+ }    
+ 

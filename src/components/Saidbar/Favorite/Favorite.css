@@ -1,0 +1,19 @@
+.important__wish-list {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.important__wish label svg {
+    cursor: pointer;
+}
+.important__wish input:hover+label svg path {
+    fill: #F36223;
+  }
+  
+.important__wish input:active+label svg path {
+    fill: #A93A09;
+  }
+  
+.important__wish input:checked+label svg path {
+    fill: #A93A09;
+  }

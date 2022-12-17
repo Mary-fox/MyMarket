@@ -1,0 +1,32 @@
+.important-btn {
+    display: flex;
+    width: 100%;
+}
+.important-btn__btn {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    width: 100%;
+    background: #F36223;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+} 
+.important-btn__add {
+    background: #888888 !important;
+}
+
+@media (max-width: 750px) {
+    .important-btn__btn {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 15px 49px;
+
+    }
+}

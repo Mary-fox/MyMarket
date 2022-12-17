@@ -1,0 +1,136 @@
+ 
+  /*Форма отзывов*/
+  .form{
+    position: relative;
+    padding-left: 170px;
+}
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+.form__title{
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.form__data, .form__error {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    
+}
+.form__name,.form__rating, .form__review, .error__name, .error__rating{
+    padding: 15px 20px;
+    border: 1px solid #888888;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.error__name, .error__rating {
+    background: #DA4A0C;
+    opacity: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    min-height: 40px;
+    padding: 8px 20px;
+}
+.form__input-name {
+    width: 100%;
+}
+.form__name {
+    width: 100%;
+}
+/* 
+.form__name, .error__name{
+    width: 75%;
+}
+.form__rating, .error__rating{
+    width: 25%;
+} */
+
+.form__name::placeholder, .form__rating::placeholder, .form__review::placeholder {
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #888888;
+}
+.form__name:hover, .form__rating:hover, .form__review:hover {
+    border: 1px solid #000000;
+}
+.form__review {
+    resize: none;
+    width: 100%;
+    height: 190px;
+    margin-bottom: 30px;
+}
+.form__btn {
+    font-family: 'Inter',sans-serif;
+    padding: 10px 20px;
+    background: #F36223;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+}
+.error {
+    border: 1px solid #DA4A0C;
+}
+
+
+.error__active {
+    opacity: 1;
+}
+   /*Для ширины экрана меньше 1500px*/
+   @media (max-width: 1499px) {
+  .form{
+        padding-left: 0;
+    } 
+   }
+ /*Для ширины экрана меньше 750px*/
+ @media (max-width: 750px) {
+    .form__title {
+        padding-top: 20px;
+    }
+    .form__data, .form__error {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form__name, .error__name {
+        width: 100%;
+    }
+    .form__rating, .error__rating {
+        width: 100%;
+    }
+    .error__name, .error__rating {
+        min-height: 15px;
+    }
+    .form__btn {
+        padding: 10px 15px;
+    }
+    .form__name,.form__rating, .form__review {
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .error__name, .error__rating {
+        padding: 2px 15px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .form__name::placeholder, .form__rating::placeholder, .form__review::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .form__review {
+        margin-bottom: 15px;
+    }
+ }    
