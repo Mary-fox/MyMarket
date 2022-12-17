@@ -50,10 +50,10 @@ function Iframe(props) {
       <Text>Реклама</Text>
       <Post>
         <Item title="This is a unique title"
-          src="./ads.html"
+          src="./abc.html"
         ></Item>
         <Item title="This is a unique title"
-          src="./ads.html"
+          src="./abc.html"
         ></Item>
       </Post>
     </Container>

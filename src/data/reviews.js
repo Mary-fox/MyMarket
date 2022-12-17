@@ -2,7 +2,7 @@ const reviews = [
     {
         id: "1",
         name: " Maрк.Г",
-        photoAuthor: `../images/review-1.jpeg`,
+        photoAuthor: `./images/review-1.jpeg`,
         alt:`фото покупателя`,
         rating: "5",        
         text: {
@@ -16,7 +16,7 @@ const reviews = [
     {
         id: "2",
         name: " Валерий Коваленко",
-        photoAuthor: `../images/review-2.jpeg`,
+        photoAuthor: `./images/review-2.jpeg`,
         alt:`фото покупателя`,
         rating: "4",
         text: {
