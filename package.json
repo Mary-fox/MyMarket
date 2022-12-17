@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mary-fox.github.io/MyMarket",
+  "homepage": "https://mary-fox.github.io/MyMarket/",
   "dependencies": {
     "@kundinos/react-hooks": "^0.12.2",
     "@reduxjs/toolkit": "^1.9.0",
