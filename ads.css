@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+        }
+.adversiting__post{
+    background-color: #F0F0F0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    }
